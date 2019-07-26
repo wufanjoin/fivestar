@@ -1,8 +1,0 @@
-<TextureAtlas name="zhuaji" imagePath="texture.png">
-  <SubTexture name="guge/jimao" x="975" y="0" width="31" height="21"/>
-  <SubTexture name="guge/ji3" x="627" y="0" width="128" height="118"/>
-  <SubTexture name="guge/ji2" x="756" y="0" width="117" height="119"/>
-  <SubTexture name="guge/ji1" x="627" y="119" width="71" height="81"/>
-  <SubTexture name="guge/ji" x="874" y="0" width="100" height="118"/>
-  <SubTexture name="guge/shou" x="0" y="0" width="626" height="384"/>
-</TextureAtlas>

@@ -1,4 +1,0 @@
-{"Id":1,"Name":"游戏版本","Version":2,"DownloadFolder":"","VersionFile":"Version.txt"}
-{"Id":1000,"Name":"通用必下载","Version":2,"DownloadFolder":"common","VersionFile":"commonVersion.txt"}
-{"Id":1001,"Name":"欢乐豆地主","Version":1,"DownloadFolder":"joylandlords","VersionFile":"joylandlordsVersion.txt"}
-{"Id":1002,"Name":"卡五星","Version":1,"DownloadFolder":"cardfivestar","VersionFile":"cardfivestarVersion.txt"}
