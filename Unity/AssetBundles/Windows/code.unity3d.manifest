@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 3555585613
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a2ea909c5209017f5e894bfba6cffd15
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7c0f2a2a6b98fed84d62adde79853840
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 502d8cafd6a5a0447ab1db9a24cdcb10, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/Code/Hotfix.mdb.bytes
+- Assets/Res/Code/Hotfix.pdb.bytes
+- Assets/Res/Code/Hotfix.dll.bytes
+- Assets/Bundles/Independent/Code.prefab
+Dependencies: []

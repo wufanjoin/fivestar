@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cardfivestart.wufan">
+
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	 <!-- 读取扩展存储，向扩展卡读入数据-->
+	 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	 <!-- 打开apk文件需要权限-->
+	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+   
+ 
+    <application
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+		android:resizeableActivity="true">
+		<meta-data android:name="android.notch_support" android:value="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+			 <!-- 网页打开app参数配置-->
+			<intent-filter  >
+				<data android:scheme="cardfivestart" android:host="com.cardfivestart.wufan"/>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+          </intent-filter>
+		  <meta-data android:name="unityplayer.UnityActivity" android:value="true"/>
+          <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false"/>
+        </activity>
+
+	   <provider
+          android:name="android.support.v4.content.FileProvider"
+	      android:authorities="wufan.kawuxing.com.cardfivestart.fileprovider"
+          android:exported="false"
+          android:grantUriPermissions="true">
+        <meta-data
+          android:name="android.support.FILE_PROVIDER_PATHS"
+          android:resource="@xml/provider_paths" />
+      </provider>
+	  
+        <activity
+            android:exported="true"
+            android:name=".wxapi.WXEntryActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoDisplay"
+            >
+        </activity>
+		
+		<activity
+            android:exported="true"
+            android:name=".wxapi.WXPayEntryActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoDisplay">
+        </activity>
+		
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+        </service>
+		
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3zhBraOy9SGi6NTDRcExaPtyjz7WRgG9" >
+        </meta-data>
+
+    </application>
+
+</manifest>

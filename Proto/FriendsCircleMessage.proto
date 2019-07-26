@@ -1,0 +1,286 @@
+syntax = "proto3";
+//import "CommonModelMessage.proto";
+package ETHotfix;
+
+//获取自己已加入的亲友圈列表
+message C2F_GetSelfFriendsList // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message F2C_GetSelfFriendsList // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated int32 FriendsCrircleIds = 1;//所有的亲友圈ID
+}
+
+
+
+//申请加入亲友圈
+message C2F_ApplyJoinFriendsCircle // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+}
+
+message F2C_ApplyJoinFriendsCircle // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//获取推荐亲友圈 每次固定5个
+message C2F_GetRecommendFriendsCircle // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 StartIndex = 1;//起始索引
+}
+
+message F2C_GetRecommendFriendsCircle // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated FriendsCircle FriendsCircleInfos = 1;//亲友圈信息
+}
+
+//获取指定亲友圈信息
+message C2F_GetFriendsCircleInfo // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	repeated int32 FriendsCrircleIds = 1;//亲友圈ID
+}
+
+message F2C_GetFriendsCircleInfo // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated FriendsCircle FrienCircleInfos = 1;//亲友圈信息
+}
+
+//获取申请加入亲友圈的玩家信息
+message C2F_GetFriendsCircleApplyJoinList // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+}
+
+message F2C_GetFriendsCircleApplyJoinList // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated int64 ApplyJoinUserIdList = 1;//申请加入的玩家列表
+}
+
+//处理申请信息
+message C2F_DisposeApplyInfo // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+	int64 ApplyUserId = 2;//申请人的UserId
+	bool IsConsent = 3;//是否同意
+}
+
+message F2C_DisposeApplyInfo // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//获取排行榜信息
+message C2F_GetRankingListInfo // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+}
+
+message F2C_GetRankingListInfo // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated RanKingPlayerInfo PlayerInfos=1;//排行榜玩家信息
+}
+
+message RanKingPlayerInfo
+{
+    int64 UserId=1;//玩家的UserID
+	int32 TotalNumber=2;//总次数
+	int32 TotalScore=3;//总积分
+}
+
+//打完一大局总结算 游戏服给亲友圈服发 玩家得分情况
+message S2F_SendTotalPlayerInfo // IMessage
+{
+	int32 RpcId = 90;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+	repeated TotalPlayerInfo TotalPlayerInfos= 2;//玩家得分情况
+}
+
+
+//打完一大局总结算 游戏服给亲友圈服发
+message TotalPlayerInfo
+{
+ int64 UserId=1;//玩家的UserId
+ int32 TotalScore=2;//总得分
+}
+
+
+//修改亲友圈玩法
+message C2F_AlterWanFa // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+	repeated int32 WanFaCofigs=2;//玩法配置
+	int64 ToyGameId=3;//游戏类型ID现在只能是卡五星
+}
+
+message F2C_AlterWanFa // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//获取亲友圈成员列表
+message C2F_GetMemberList // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+}
+
+message F2C_GetMemberList // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated int64 MemberUserIdList=1;//成员列表
+}
+
+//修改推荐配置
+message C2F_AlterIsRecommend // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+	bool IsRecommend = 2;//是否推荐
+}
+
+message F2C_AlterIsRecommend // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//退出亲友圈
+message C2F_OutFriendsCircle // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+}
+
+message F2C_OutFriendsCircle // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//把人踢出亲友圈
+message C2F_KickOutFriendsCircle // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+	int64 OperateUserId = 2;//被踢出亲友圈的UserId
+}
+
+message F2C_KickOutFriendsCircle // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//操作管理权限
+message C2F_ManageJurisdictionOperate // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+	int64 OperateUserId = 2;//被操作管理权限的UserId
+	bool IsSetManage=3;//是否设为管理
+}
+
+message F2C_ManageJurisdictionOperate // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//修改亲友圈公告
+message C2F_AlterAnnouncement // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCrircleId = 1;//亲友圈ID
+	string Announcement = 2;//公告内容
+}
+
+message F2C_AlterAnnouncement // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//创建亲友圈
+message C2F_CreatorFriendCircle // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	string Name = 1;//亲友圈名字
+	string Announcement = 2;//公告内容
+	int64 ToyGameId=3;//默认玩法游戏Id
+	repeated int32 WanFaCofigs=4;//玩法配置
+}
+
+message F2C_CreatorFriendCircle // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	FriendsCircle FriendsCircle=1;//亲友圈信息
+}
+
+
+//亲友圈基本信息 
+message FriendsCircle
+{
+  int32 FriendsCircleId = 1;//亲友圈ID
+  string  Name = 2;//亲友圈名字
+  int64 CreateUserId = 3;//创建人UserId
+  int32 TotalNumber = 4;//总人数
+  repeated int32 DefaultWanFaCofigs = 5;//默认玩法配置
+  repeated int64 ManageUserIds = 6;//所有管理的UserId
+  string Announcement = 7;//亲友圈公告
+  bool IsRecommend = 8;//是否推荐给陌生人
+}

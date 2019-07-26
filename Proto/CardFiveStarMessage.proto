@@ -1,0 +1,270 @@
+syntax = "proto3";
+import "CommonModelMessage.proto";
+package ETHotfix;
+
+//开始游戏通知
+message Actor_FiveStar_StartGame // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 RoomId = 3;//房间ID
+	repeated FiveStarPlayer PlayerInfos = 1; //开始游戏所有玩家信息
+	repeated int32 RoomConfigs = 2;//房间配置信息
+}
+
+//小局开始游戏
+message Actor_FiveStar_SmallStartGame // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 CurrOfficNum = 1;//当前局数
+}
+
+//玩家准备
+message Actor_FiveStar_PlayerReady // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;//准备玩家索引
+}
+
+//玩家轮休通知
+message Actor_FiveStar_PlayerRest // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 RestSeatIndex = 1;//休息玩家的索引
+}
+//玩家4人局 索引回归正常通知
+message Actor_FiveStar_NormalSeatIndex // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated int64 NewIndexInUser = 1;//新玩家索引对应UserId
+}
+
+//发牌通知
+message Actor_FiveStar_Deal // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated int32 Cards = 1; //只有自己的牌 其他玩家的牌都是固定13张
+}
+
+//玩家买马
+message Actor_FiveStar_MaiMa // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 Card = 1;//买的哪一张牌
+	int32 Score = 2;//买码加的分数
+}
+
+//可以打漂
+message Actor_FiveStar_CanDaPiao // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 MaxPiaoNum = 1;//最大漂数
+}
+
+//打漂结果
+message Actor_FiveStar_DaPiaoResult // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;//玩家索引
+	int32 SelectPiaoNum = 2;//玩家选择的漂数
+}
+
+
+
+//可以进行碰杠胡
+message Actor_FiveStar_CanOperate // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1; //可操作玩家索引
+	repeated int32 CanOperateLits = 2; //可操作列表
+	repeated int32 CanGangLits = 3; //杠牌列表 如果可以杠的话才有
+}
+
+//玩家进行碰杠胡操作
+message Actor_FiveStar_OperateResult // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1; //操作玩家索引
+    FiveStarOperateInfo OperateInfo = 2; //玩家操作结果
+}
+
+//玩家操作信息
+message FiveStarOperateInfo
+{
+	int32 Card = 1;//哪张牌
+	int32 OperateType = 2;//操作类型 1.碰 2.明杠 3.擦杠 4.放冲胡 5.自摸
+	int32 PlayCardIndex = 3;//打出这个牌的玩家索引 暗杠和自摸胡是没有
+}
+
+//玩家亮倒 不用服务器 通知 客户端自行判断
+message Actor_FiveStar_LiangDao // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1; //操作玩家索引
+    repeated int32 Hnads = 2; //亮倒的手牌
+}
+
+
+
+//可以出牌
+message Actor_FiveStar_CanPlayCard // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;//可以出牌玩家索引
+}
+
+//玩家出牌结果
+message Actor_FiveStar_PlayCardResult // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1; //出牌玩家索引
+	int32 Card = 2; //出的哪张牌
+}
+
+//玩家摸牌
+message Actor_FiveStar_MoPai // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1; //摸牌玩家索引
+	int32 Card = 2; //摸的哪张牌
+}
+
+//刷新玩家手牌信息 每次出牌玩家都会收到
+message Actor_FiveStar_NewestHands // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated int32 Hands = 1; //手牌信息
+}
+
+//打牌过分中分数变化 一般只有杠牌才有
+message Actor_FiveStar_ScoreChange // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated int32  GetScore= 1; //玩家的得分 顺序按玩家的索引顺序
+	repeated int32  NowScore= 2; //玩家的现有分数
+}
+
+//小结算
+message Actor_FiveStar_SmallResult // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated FiveStar_SmallPlayerResult  SmallPlayerResults= 1; //小局结算玩家信息
+	int32 MaiMaCard = 2;//买马买的哪一张牌
+}
+
+//单个玩家小局结算结果
+message FiveStar_SmallPlayerResult
+{
+	int32 SeatIndex = 1; //玩家索引
+	int32 PlayerResultType = 2; //玩家结算类型 (1.胡牌 2.放冲 0.什么都没干)
+	int32 GetScore = 3; //玩家得分
+	int32 SamllGangPaiScore = 4;//杠牌得分
+	int32 NowScore = 5;//玩家现在分数
+	repeated int32 Hands = 6; //玩家手牌
+	repeated FiveStarOperateInfo PengGangInfos = 9;//碰杠信息
+	repeated int32 HuPaiTypes = 7; //胡牌类型 包含亮倒没胡赔付 和查叫赔付
+	int32 WinCard = 8; //赢的哪张牌 只有赢得人才有
+}
+
+//总结算
+message Actor_FiveStar_TotalResult // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated FiveStarTotalPlayerResult TotalPlayerResults = 1; //总结算玩家信息
+}
+
+//单个玩家总结算结果
+message FiveStarTotalPlayerResult
+{
+	int32 SeatIndex = 1; //玩家索引
+	int32 HuPaiCount = 2; //胡牌次数
+	int32 ZiMoCount = 3; //自摸次数
+	int32 FangChongCount = 4; //放冲次数
+	int32 GangPaiCount = 5; //杠牌次数次数
+	int32 TotalSocre = 6; //总得分
+}
+
+//托管状态改变
+message Actor_FiveStar_CollocationChange // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	bool IsCollocation=1; //是否托管
+}
+
+//重连数据
+message Actor_FiveStar_Reconnection // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated FiveStarPlayer Players = 1; //所有玩家信息
+	int32 RoomId=2;//房间ID
+	int32 FriendsCircleId=3;//对应的亲友圈id
+	int32 RoomType=4;//房间类型
+	repeated int32 Configs=5;//房间配置信息
+	int32 CurrRestSeatIndex=6;//当前休息顽家的索引 只有4人房才有
+	int32 CurrRoomStateType=7;//当前房间的状态
+	int32 ResidueCardCount=8;//剩余牌的数量
+	bool IsDaPiaoBeing=9;//是否在打漂中
+	int32 EndPlayCardSize=10;//最后出的哪一张
+	int32 CurrOfficNum=11;//当前局数
+}
+
+//卡五星玩家信息
+message FiveStarPlayer
+{
+	int32 SeatIndex = 1; //座位索引
+	User user = 2; //用户信息
+	repeated int32 PlayCards = 3;//出牌信息
+	repeated FiveStarOperateInfo OperateInfos = 4;//碰杠信息
+	int32 PiaoNum = 5;//漂的分数
+	int32 NowScore = 6;//现有分数 匹配模式就是豆子数
+	bool IsLiangDao = 7;//是否亮倒
+	repeated int32 Hands = 8;//手牌信息 不应该发时候数量在索引0的位置
+	bool ReadyState=9;//玩家的准备状态
+	bool IsAlreadyDaPiao=10;//是否已经打过漂了
+	int32 HuPaiCount = 11; //胡牌次数
+	int32 FangChongCount = 12; //放冲次数
+	int32 ZiMoCount = 13; //自摸次数
+	int32 GangPaiCount = 14; //杠牌次数
+}
+
+//-----------------往下全是录像过程的具体数据协议-------------
+
+//小局游戏初始化
+message Video_GameInit
+{
+ repeated int32 RoomConfigs=1;//房间配置
+ int32 RoomNumber=2;//房间号
+ int32 OfficeNumber=4;//第几小局局数
+ repeated Video_PlayerInfo playerInfos=3;//玩家初始化信息
+}
+
+message Video_PlayerInfo
+{
+  int32 NowScore=1;//当前分数
+  string Name=2;//玩家的名字
+  string Icon=3;//玩家的头像
+  repeated int32 hands=4;//初始化手牌信息
+  int32 PiaoFen=5;//漂分
+  int64 UserId=6;//用户ID
+  int32 SeatIndex=7;//玩家索引
+}

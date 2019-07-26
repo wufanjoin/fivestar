@@ -1,0 +1,61 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: largeCard.png (512 x 512)
+# $TexturePacker:SmartUpdate:a4e4ab2b14404eb5532509cdf908f68b:e0247a759ab732f859aef2bce78d5f36:156f555f998ae53d61d0ff4026beb132$
+#
+
+LargeCard_commom_shuzi_hei_1;398;128;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_10;378;176;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_11;378;224;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_12;378;272;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_13;382;368;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_2;382;416;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_3;382;464;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_4;378;320;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_5;338;368;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_6;338;416;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_7;338;464;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_8;388;20;42;46;0.5;0.5
+LargeCard_commom_shuzi_hei_9;354;68;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_1;354;116;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_10;334;164;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_11;398;82;40;44;0.5;0.5
+LargeCard_commom_shuzi_hong_12;334;212;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_13;334;260;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_2;334;308;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_3;344;14;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_4;310;62;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_5;310;110;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_6;300;14;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_7;266;62;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_8;266;110;42;46;0.5;0.5
+LargeCard_commom_shuzi_hong_9;256;14;42;46;0.5;0.5
+LargeCard_huase_1;170;7;40;31;0.5;0.5
+LargeCard_huase_2;128;7;40;31;0.5;0.5
+LargeCard_huase_3;86;7;40;31;0.5;0.5
+LargeCard_huase_4;44;7;40;31;0.5;0.5
+LargeCard_huase_5;2;7;40;31;0.5;0.5
+LargeCard_king_14;314;356;22;154;0.5;0.5
+LargeCard_king_15;290;356;22;154;0.5;0.5
+LargeCard_king_huase_14;240;158;92;164;0.5;0.5
+LargeCard_king_huase_15;146;158;92;164;0.5;0.5
+LargeCard_laizi_shuzi_1;222;62;42;46;0.5;0.5
+LargeCard_laizi_shuzi_10;222;110;42;46;0.5;0.5
+LargeCard_laizi_shuzi_11;212;14;42;46;0.5;0.5
+LargeCard_laizi_shuzi_12;178;62;42;46;0.5;0.5
+LargeCard_laizi_shuzi_13;178;110;42;46;0.5;0.5
+LargeCard_laizi_shuzi_2;134;40;42;46;0.5;0.5
+LargeCard_laizi_shuzi_3;134;88;42;46;0.5;0.5
+LargeCard_laizi_shuzi_4;90;40;42;46;0.5;0.5
+LargeCard_laizi_shuzi_5;90;88;42;46;0.5;0.5
+LargeCard_laizi_shuzi_6;46;40;42;46;0.5;0.5
+LargeCard_laizi_shuzi_7;46;88;42;46;0.5;0.5
+LargeCard_laizi_shuzi_8;2;40;42;46;0.5;0.5
+LargeCard_laizi_shuzi_9;2;88;42;46;0.5;0.5
+large_card_anti;146;324;142;186;0.5;0.5
+large_card_bgx;2;136;142;186;0.5;0.5
+large_card_mengban;2;324;142;186;0.5;0.5

@@ -1,0 +1,135 @@
+syntax = "proto3";
+import "CommonModelMessage.proto";
+package ETHotfix;
+
+//设置封号 和解封
+message C2U_SetIsStopSeal // IAdministratorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+	StopSealRecord StopSeal = 1;//封号信息
+}
+
+message U2C_SetIsStopSeal // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+
+//更改用户 物品
+message C2U_ChangeUserGoods // IAdministratorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+	int64 ChangeUserUserId = 1;//更改用户的UserId
+	int64 GoodsId = 2;//物品id
+	int32 Amount = 3;//物品数量
+}
+
+message U2C_ChangeUserGoods // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//获取在线人数
+message C2U_GetOnLineNumber // IAdministratorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+}
+
+message U2C_GetOnLineNumber // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	int32 OnLineNumber = 1;//在线人数
+}
+
+//获取用户交易记录
+message C2U_GetGoodsDealRecord // IAdministratorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+	int64 DealRecordUserId = 1;
+}
+
+message U2C_GetGoodsDealRecord // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated GoodsDealRecord GoodsDealRecords = 1;//交易记录
+}
+
+//查询用户信息
+message C2U_QueryUserInfo // IAdministratorRequest
+{
+    int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+	int64 QueryUserId = 1;
+}
+
+message U2C_QueryUserInfo // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	User user = 1;//user信息
+	bool IsStopSeal = 2;//是否封号了
+	int64 LastLoginTime = 3;//最后登录时间
+	int32 AgecyLv = 4;//代理等级
+}
+
+//查询封号记录
+message C2U_QueryStopSealRecord // IAdministratorRequest
+{
+    int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+	int64 QueryUserId = 1;
+}
+
+message U2C_QueryStopSealRecord // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated StopSealRecord StopSealRecords = 1;//封号记录
+}
+
+
+
+//单次封号信息
+message StopSealRecord
+{
+   int64 StopSealUserId = 1;//封号的UserId
+   bool IsStopSeal = 2;//封号还是解封
+   string Explain = 3;//解释说明
+   int64 Time = 4;//封号时间
+}
+
+//单次用户钻石交易记录
+message GoodsDealRecord
+{
+  int64 UserId = 1;
+  int32 Amount = 2;
+  int32 FinishNowAmount = 3;
+  int64 Time = 4;
+  int32 Type = 5;
+}

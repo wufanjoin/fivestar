@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1962928787930822}
+  m_IsPrefabParent: 1
+--- !u!1 &1962928787930822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4849824377252248}
+  - component: {fileID: 114166925873418490}
+  m_Layer: 0
+  m_Name: ReferenceCollector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4849824377252248
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962928787930822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114166925873418490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962928787930822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502d8cafd6a5a0447ab1db9a24cdcb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - key: big_1
+    gameObject: {fileID: 21300000, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_2
+    gameObject: {fileID: 21300022, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_3
+    gameObject: {fileID: 21300028, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_4
+    gameObject: {fileID: 21300030, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_5
+    gameObject: {fileID: 21300032, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_6
+    gameObject: {fileID: 21300034, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_7
+    gameObject: {fileID: 21300036, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_8
+    gameObject: {fileID: 21300038, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_9
+    gameObject: {fileID: 21300040, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_10
+    gameObject: {fileID: 21300002, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_11
+    gameObject: {fileID: 21300004, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_12
+    gameObject: {fileID: 21300006, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_13
+    gameObject: {fileID: 21300008, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_14
+    gameObject: {fileID: 21300010, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_15
+    gameObject: {fileID: 21300012, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_16
+    gameObject: {fileID: 21300014, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_17
+    gameObject: {fileID: 21300016, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_18
+    gameObject: {fileID: 21300018, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_19
+    gameObject: {fileID: 21300020, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_20
+    gameObject: {fileID: 21300024, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: big_21
+    gameObject: {fileID: 21300026, guid: b9eb093ebc3aa034c85907906108c65c, type: 3}
+  - key: Card_Down_DaoDi_BeiMian
+    gameObject: {fileID: 1039424638233510, guid: bd5b47bdbf53bb4448049df7714382a3,
+      type: 2}
+  - key: Card_Down_DaoDi_ZhengMain
+    gameObject: {fileID: 1283542142511886, guid: d8f0719598abe274d86ce15c71152c0d,
+      type: 2}
+  - key: Card_Down_ZhiLi_ZhengMain
+    gameObject: {fileID: 1907437528093388, guid: bfae3efafa21e8046a3d1ff5aede6639,
+      type: 2}
+  - key: Card_Left_DaoDi_BeiMian
+    gameObject: {fileID: 1289414678763132, guid: b4bebc174b30ad24fa864f3e140c8143,
+      type: 2}
+  - key: Card_Left_DaoDi_ZhengMain
+    gameObject: {fileID: 1770685944656960, guid: 9b319a24c228e534d811686db2771ef1,
+      type: 2}
+  - key: Card_Left_ZhiLi_BeiMian
+    gameObject: {fileID: 1598008407840974, guid: de67717dbe65fe1478bdc960d577130c,
+      type: 2}
+  - key: Card_Right_DaoDi_BeiMian
+    gameObject: {fileID: 1124418112302246, guid: 7700334c26f69c94388beb15e242172d,
+      type: 2}
+  - key: Card_Right_DaoDi_ZhengMain
+    gameObject: {fileID: 1551714018139220, guid: ae3b98f0af7f46b4289378c51798a0ca,
+      type: 2}
+  - key: Card_Right_ZhiLi_BeiMian
+    gameObject: {fileID: 1503769053161902, guid: 20a279807290239428aa6496fe823161,
+      type: 2}
+  - key: Card_Up_DaoDi_BeiMian
+    gameObject: {fileID: 1784356665228702, guid: de8d4c1666b68ff42b397b09b2a5c7e5,
+      type: 2}
+  - key: Card_Up_DaoDi_ZhengMain
+    gameObject: {fileID: 1813347542058104, guid: b868ac54dbc3ceb41af1b91ea5174d2e,
+      type: 2}
+  - key: Card_Up_ZhiLi_BeiMian
+    gameObject: {fileID: 1027632856083472, guid: 85c800b6173cc414f99997df5d407134,
+      type: 2}
+  - key: CardFiveStarHand
+    gameObject: {fileID: 1771208235878446, guid: 7e6b0491243b85746801660a689d9e90,
+      type: 2}
+  - key: mjaddscore
+    gameObject: {fileID: 12800000, guid: be045ab1a1f3a3d428cbe7b06c106165, type: 2}
+  - key: mjsubscore
+    gameObject: {fileID: 12800000, guid: 1b33779893891c548bfc44f6ad2cd366, type: 2}
+  - key: ChuCardArrows
+    gameObject: {fileID: 1192463224837576, guid: 24ae765effd00b143a97627b91195b5c,
+      type: 2}
+  - key: PlayerDownUI
+    gameObject: {fileID: 1264810898620626, guid: cab31c8378a39be459c92fc4c2719313,
+      type: 2}
+  - key: PlayerLeftUI
+    gameObject: {fileID: 1300617089942730, guid: 1290bb210faebd34a89295a27477f457,
+      type: 2}
+  - key: PlayerRightUI
+    gameObject: {fileID: 1090820428319982, guid: 20a3ad904c31b84478f9781ff5016948,
+      type: 2}
+  - key: PlayerUpUI
+    gameObject: {fileID: 1186102283812228, guid: cf4c01113792a3d40a9a7f368ed4f0ef,
+      type: 2}
+  - key: ReadyIcon
+    gameObject: {fileID: 1096873252953992, guid: f28dbe43a54809e468f4748a99bcaad3,
+      type: 2}
+  - key: peng
+    gameObject: {fileID: 21300008, guid: b21b485eb31efbc43921cb05c0027ec6, type: 3}
+  - key: gang
+    gameObject: {fileID: 21300002, guid: b21b485eb31efbc43921cb05c0027ec6, type: 3}
+  - key: OperationSpecialImage
+    gameObject: {fileID: 1369579225221050, guid: a89d3818732c5974988eeba830bc4f9b,
+      type: 2}
+  - key: gang_1
+    gameObject: {fileID: 21300026, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: gang_2
+    gameObject: {fileID: 21300028, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: gang_3
+    gameObject: {fileID: 21300030, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: hu_1
+    gameObject: {fileID: 21300034, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: hu_2
+    gameObject: {fileID: 21300036, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: hu_3
+    gameObject: {fileID: 21300038, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: liang_1
+    gameObject: {fileID: 21300042, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: liang_2
+    gameObject: {fileID: 21300044, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: liang_3
+    gameObject: {fileID: 21300046, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: peng_1
+    gameObject: {fileID: 21300050, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: peng_2
+    gameObject: {fileID: 21300052, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: peng_3
+    gameObject: {fileID: 21300054, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: ting_1
+    gameObject: {fileID: 21300056, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: ting_2
+    gameObject: {fileID: 21300058, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: ting_3
+    gameObject: {fileID: 21300060, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: zimo_1
+    gameObject: {fileID: 21300064, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: zimo_2
+    gameObject: {fileID: 21300066, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: zimo_3
+    gameObject: {fileID: 21300068, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: chi_1
+    gameObject: {fileID: 21300020, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: chi_2
+    gameObject: {fileID: 21300022, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: chi_3
+    gameObject: {fileID: 21300024, guid: 8326dd39b1838304f8c7e845b3be4914, type: 3}
+  - key: ChuCardJianTouImage
+    gameObject: {fileID: 1591222781149144, guid: e13accc563fe964418410125770fa042,
+      type: 2}
+  - key: PlayerHead
+    gameObject: {fileID: 1588958356003028, guid: 144cb46f90ba3854cab374c47ca70857,
+      type: 2}

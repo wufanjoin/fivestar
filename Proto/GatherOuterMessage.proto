@@ -1,0 +1,131 @@
+syntax = "proto3";
+import "CommonModelMessage.proto";
+package ETHotfix;
+
+//服务器进行热更
+message C2M_Reload // IRequest
+{
+	int32 RpcId = 90;
+	string Account = 1;
+	string Password = 2;
+}
+
+message M2C_Reload // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+//这个应该是测试用的协议
+message C2R_Ping // IRequest
+{
+	int32 RpcId = 90;
+}
+
+message R2C_Ping // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+//去验证验证账号 请求秘钥
+message C2R_CommonLogin // IRequest
+{
+	int32 RpcId = 90;
+	int32 loginType=1;		// 登陆方式1.编辑状态2.游客3.微信
+	int32 PlatformType = 2;	//平台类型1.安卓2.IOS 3.PC
+	string	DataStr=3;	// 登对信息对象
+}
+
+message R2C_CommonLogin // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	string Address = 1;//网关端口
+	int64  Key	    = 2;// 秘钥
+	string LoginVoucher=3;//登陆凭证 下次可直接用这个登陆
+}
+
+//拿着秘钥去登陆
+message C2G_GateLogin // IRequest
+{
+	int32 RpcId = 90;
+	int64 Key = 1;	// 秘钥
+}
+
+message G2C_GateLogin // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	User   user=1;
+	int64 ServerTime=2;
+}
+
+
+//通知玩家得到了物品
+message Actor_UserGetGoods // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	bool isShowHintPanel = 1;//是否显示提示面板
+	repeated GetGoodsOne GetGoodsList = 2;
+}
+
+//通知某个玩家上线
+message Actor_UserOnLine // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int64 UserId = 1;//上线玩家ID
+	int64 SessionActorId = 2;//上线玩家网关Session的ID
+}
+
+//通知某个玩家下线
+message Actor_UserOffline // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int64 UserId = 1;//下线玩家ID
+}
+
+//通知客户端被挤号了
+message Actor_CompelAccount // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	string Message = 1; //
+}
+
+//上传定位和IP信息
+message C2G_UploadingLocationIp // IRequest
+{
+	int32 RpcId = 90;
+	string Location=1;//定位信息
+}
+
+
+message G2U_UploadingLocationIp // IRequest
+{
+	int32 RpcId = 90;
+	int64 UserId=1;//UserId
+	string Location=2;//定位信息
+	string Ip=3;//Ip信息
+}
+
+message S2C_UploadingLocationIp // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string Ip = 1;//Ip信息
+}
+
+//心跳消息
+message C2G_Heartbeat // IMessage
+{
+	int32 RpcId = 90;
+}
+
+

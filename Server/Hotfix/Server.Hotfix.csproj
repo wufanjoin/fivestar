@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+	<RuntimeIdentifiers>win10-x64;CentOS.7.6-x64</RuntimeIdentifiers>
+    <AssemblyName>Hotfix</AssemblyName>
+    <RootNamespace>ETHotfix</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETCOREAPP2_0;SERVER</DefineConstants>
+    <OutputPath>..\..\Bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;RELEASE;NETCOREAPP2_0;SERVER</DefineConstants>
+    <OutputPath>..\..\Bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Other\**" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\CardFiveStar\CardFiveStarRoom\FiveStarRoomConfigFactory.cs" Link="GameGather\CardFiveStar\Factory\FiveStarRoomConfigFactory.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\CardFiveStar\Config\CardFiveStarRoomConfig.cs" Link="GameGather\CardFiveStar\Config\CardFiveStarRoomConfig.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\CardFiveStar\Logic\HuPaiLogic.cs" Link="GameGather\CardFiveStar\System\Logic\HuPaiLogic\HuPaiLogic.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\CardFiveStar\Logic\HuPaiScoreLogic.cs" Link="GameGather\CardFiveStar\System\Logic\HuPaiLogic\HuPaiScoreLogic.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\CardFiveStar\Logic\LiangDaoCardLogic.cs" Link="GameGather\CardFiveStar\System\Logic\HuPaiLogic\LiangDaoCardLogic.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\CardFiveStar\Logic\TingPaiLogic.cs" Link="GameGather\CardFiveStar\System\Logic\HuPaiLogic\TingPaiLogic.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\Common\Module\RoomConfig\RoomConfigIntended.cs" Link="GameGather\Common\System\RoomConfigIntended\RoomConfigIntended.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\JoyLandlords\JoyLandlordsCardTool\JoyLandlordsCardTool.cs" Link="GameGather\JoyLandlords\System\Logic\JoyLandlordsCardTool.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\JoyLandlords\JoyLandlordsLogic\JoyLdsGamePlayHandLogic.cs" Link="GameGather\JoyLandlords\System\Logic\JoyLdsGamePlayHandLogic.cs" />
+    <Compile Include="..\..\Unity\Assets\Hotfix\GameGather\JoyLandlords\JoyLandlordsLogic\PlayCardType.cs" Link="GameGather\JoyLandlords\System\Logic\PlayCardType.cs" />
+    <Compile Include="..\..\Unity\Assets\Model\Module\Message\NetOuterComponentSystem.cs">
+      <Link>Module\Message\NetOuterComponentSystem.cs</Link>
+    </Compile>
+    <EmbeddedResource Remove="Other\**" />
+    <None Remove="Other\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Server.Model.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GameGather\CardFiveStar\Config\" />
+    <Folder Include="GameGather\Common\Component\" />
+    <Folder Include="GameGather\Common\Handler\DB\" />
+    <Folder Include="GameGather\Common\System\RoomConfigIntended\" />
+    <Folder Include="Module\Http\" />
+  </ItemGroup>
+</Project>

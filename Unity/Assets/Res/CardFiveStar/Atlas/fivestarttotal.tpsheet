@@ -1,0 +1,18 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: fivestarttotal.png (1024 x 512)
+# $TexturePacker:SmartUpdate:e7c24402b0d07b50c4d0f7bc1f74aef0:863e08583e0bc249eb578b9267038838:82c8d90b662288fc0ef0ac7e61054f24$
+#
+
+fivestartotal_0;930;421;86;89;0.5;0.5
+fivestartotal_1;668;158;260;352;0.5;0.5
+fivestartotal_2;930;372;92;47;0.5;0.5
+fivestartotal_3;2;242;198;168;0.5;0.5
+fivestartotal_6;202;227;182;183;0.5;0.5
+fivestartotal_7;2;163;191;77;0.5;0.5
+fivestartotal_8;930;345;47;25;0.5;0.5
+fivestartotal_9;2;412;664;98;0.5;0.5

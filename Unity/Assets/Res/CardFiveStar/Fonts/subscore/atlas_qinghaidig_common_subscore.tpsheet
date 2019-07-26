@@ -1,0 +1,22 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: atlas_qinghaidig_common_subscore.png (248 x 100)
+# $TexturePacker:SmartUpdate:b855f20e41044f59fc0a324ec01318c3:8722d75fbe28b8bdc5fadc172fb7f756:c6427f7e4b100a15f033aa05cc46d452$
+#
+
+subscore_0;0;51;45;49;0.5;0.5
+subscore_1;183;51;28;49;0.5;0.5
+subscore_2;47;0;43;49;0.5;0.5
+subscore_3;92;0;43;49;0.5;0.5
+subscore_4;0;0;45;49;0.5;0.5
+subscore_5;93;51;43;49;0.5;0.5
+subscore_6;137;0;43;49;0.5;0.5
+subscore_7;138;51;43;49;0.5;0.5
+subscore_8;47;51;44;49;0.5;0.5
+subscore_9;182;0;42;49;0.5;0.5
+subscore_A;213;58;35;42;0.5;0.5
+subscore_J;226;42;20;14;0.5;0.5

@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!128 &12800000
+Font:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: mjaddscore
+  serializedVersion: 5
+  m_LineSpacing: 0.1
+  m_DefaultMaterial: {fileID: 2100000, guid: 041838b2e9b116944bab42dce8666ddb, type: 2}
+  m_FontSize: 0
+  m_Texture: {fileID: 0}
+  m_AsciiStartOffset: 0
+  m_Tracking: 1
+  m_CharacterSpacing: 0
+  m_CharacterPadding: 1
+  m_ConvertCase: 0
+  m_CharacterRects:
+  - serializedVersion: 2
+    index: 48
+    uv:
+      serializedVersion: 2
+      x: 0.45454547
+      y: 0.80859375
+      width: 0.3409091
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 45
+      height: -49
+    advance: 45
+    flipped: 0
+  - serializedVersion: 2
+    index: 49
+    uv:
+      serializedVersion: 2
+      x: 0.68939394
+      y: 0.24609375
+      width: 0.21212119
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 28
+      height: -49
+    advance: 28
+    flipped: 0
+  - serializedVersion: 2
+    index: 50
+    uv:
+      serializedVersion: 2
+      x: 0.34848484
+      y: 0.41015625
+      width: 0.3257576
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 43
+      height: -49
+    advance: 43
+    flipped: 0
+  - serializedVersion: 2
+    index: 51
+    uv:
+      serializedVersion: 2
+      x: 0
+      y: 0.36328125
+      width: 0.32575756
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 43
+      height: -49
+    advance: 43
+    flipped: 0
+  - serializedVersion: 2
+    index: 52
+    uv:
+      serializedVersion: 2
+      x: 0.45454547
+      y: 0.609375
+      width: 0.3409091
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 45
+      height: -49
+    advance: 45
+    flipped: 0
+  - serializedVersion: 2
+    index: 53
+    uv:
+      serializedVersion: 2
+      x: 0.3409091
+      y: 0.2109375
+      width: 0.3257576
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 43
+      height: -49
+    advance: 43
+    flipped: 0
+  - serializedVersion: 2
+    index: 54
+    uv:
+      serializedVersion: 2
+      x: 0
+      y: 0.1640625
+      width: 0.32575756
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 43
+      height: -49
+    advance: 43
+    flipped: 0
+  - serializedVersion: 2
+    index: 55
+    uv:
+      serializedVersion: 2
+      x: 0.3409091
+      y: 0.01171875
+      width: 0.3257576
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 43
+      height: -49
+    advance: 43
+    flipped: 0
+  - serializedVersion: 2
+    index: 56
+    uv:
+      serializedVersion: 2
+      x: 0
+      y: 0.5625
+      width: 0.33333334
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 44
+      height: -49
+    advance: 44
+    flipped: 0
+  - serializedVersion: 2
+    index: 57
+    uv:
+      serializedVersion: 2
+      x: 0.6818182
+      y: 0.046875
+      width: 0.3181818
+      height: 0.19140625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 24
+      width: 42
+      height: -49
+    advance: 42
+    flipped: 0
+  - serializedVersion: 2
+    index: 70
+    uv:
+      serializedVersion: 2
+      x: 0
+      y: 0.76171875
+      width: 0.43939394
+      height: 0.23828125
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 30
+      width: 58
+      height: -61
+    advance: 58
+    flipped: 0
+  - serializedVersion: 2
+    index: 74
+    uv:
+      serializedVersion: 2
+      x: 0.68939394
+      y: 0.4453125
+      width: 0.25
+      height: 0.15625
+    vert:
+      serializedVersion: 2
+      x: 0
+      y: 20
+      width: 33
+      height: -40
+    advance: 33
+    flipped: 0
+  m_KerningValues: []
+  m_PixelScale: 0.1
+  m_FontData: 
+  m_Ascent: 0
+  m_Descent: 0
+  m_DefaultStyle: 0
+  m_FontNames: []
+  m_FallbackFonts: []
+  m_FontRenderingMode: 0
+  m_UseLegacyBoundsCalculation: 0

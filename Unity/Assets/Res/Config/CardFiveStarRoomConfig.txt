@@ -1,0 +1,11 @@
+{"Id":0,"Title":"结束方式","SelectConfigs":[{"Value":1,"Describe":"局数"},{"Value":2,"Describe":"分拖底"}],"OptionType":1,"DefaultValue":1}
+{"Id":1,"Title":"局数","SelectConfigs":[{"Value":2,"Describe":"2局","NeedJewelNum":4},{"Value":8,"Describe":"8局","NeedJewelNum":8},{"Value":12,"Describe":"12局","NeedJewelNum":12}],"OptionType":1,"DefaultValue":8}
+{"Id":2,"Title":"分拖底","SelectConfigs":[{"Value":30,"Describe":"30分","NeedJewelNum":4},{"Value":50,"Describe":"50局","NeedJewelNum":8},{"Value":70,"Describe":"70分","NeedJewelNum":12}],"OptionType":1,"DefaultValue":30}
+{"Id":3,"Title":"房费","SelectConfigs":[{"Value":1,"Describe":"房主"},{"Value":2,"Describe":"均摊"}],"OptionType":1,"DefaultValue":1}
+{"Id":4,"Title":"人数","SelectConfigs":[{"Value":2,"Describe":"2人"},{"Value":3,"Describe":"3人"},{"Value":4,"Describe":"4人(赢家轮休)"}],"OptionType":1,"DefaultValue":3}
+{"Id":5,"Title":"底分","SelectConfigs":[{"Value":1,"Describe":"1分"},{"Value":2,"Describe":"2分"},{"Value":3,"Describe":"3分"}],"OptionType":1,"DefaultValue":1}
+{"Id":6,"Title":"漂数","SelectConfigs":[{"Value":2,"Describe":"2漂"},{"Value":1,"Describe":"1漂"},{"Value":0,"Describe":"不漂"}],"OptionType":1,"DefaultValue":2}
+{"Id":7,"Title":"买马","SelectConfigs":[{"Value":2,"Describe":"自摸买马"},{"Value":1,"Describe":"亮倒自摸买马"},{"Value":0,"Describe":"不买"}],"OptionType":1,"DefaultValue":1}
+{"Id":8,"Title":"自带1漂","SelectConfigs":[{"Value":1,"Describe":"是"},{"Value":0,"Describe":"否"}],"OptionType":1,"DefaultValue":0}
+{"Id":9,"Title":"封顶番数","SelectConfigs":[{"Value":8,"Describe":"8番"},{"Value":16,"Describe":"16番"},{"Value":999999,"Describe":"不封顶"}],"OptionType":1,"DefaultValue":8}
+{"Id":10,"Title":"是否有超时","SelectConfigs":[{"Value":0,"Describe":"没有"},{"Value":1,"Describe":"有"}],"OptionType":1,"DefaultValue":0}

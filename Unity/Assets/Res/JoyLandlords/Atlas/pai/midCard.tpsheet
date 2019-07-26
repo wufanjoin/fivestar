@@ -1,0 +1,61 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: midCard.png (256 x 512)
+# $TexturePacker:SmartUpdate:addf99cab167dbf7cc9b65a57b6e8573:3563b781c2fe2ed43b666110365b8046:42500abab6e7dddfede7b62a0b70f62d$
+#
+
+MidCard_commom_shuzi_hei_1;192;16;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_10;154;16;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_11;192;55;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_12;192;94;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_13;154;55;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_2;192;133;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_3;154;94;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_4;154;133;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_5;202;172;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_6;164;172;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_7;126;172;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_8;116;39;36;37;0.5;0.5
+MidCard_commom_shuzi_hei_9;116;78;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_1;116;117;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_10;78;39;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_11;78;78;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_12;78;117;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_13;54;182;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_2;196;211;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_3;158;211;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_4;120;211;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_5;40;37;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_6;40;76;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_7;40;115;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_8;210;250;36;37;0.5;0.5
+MidCard_commom_shuzi_hong_9;210;289;36;37;0.5;0.5
+MidCard_huase_1;114;13;34;24;0.5;0.5
+MidCard_huase_2;90;156;34;24;0.5;0.5
+MidCard_huase_3;54;156;34;24;0.5;0.5
+MidCard_huase_4;38;11;34;24;0.5;0.5
+MidCard_huase_5;2;11;34;24;0.5;0.5
+MidCard_king_14;222;438;13;72;0.5;0.5
+MidCard_king_15;142;332;13;72;0.5;0.5
+MidCard_king_huase_14;82;260;50;68;0.5;0.5
+MidCard_king_huase_15;2;154;50;68;0.5;0.5
+MidCard_laizi_shuzi_1;172;250;36;37;0.5;0.5
+MidCard_laizi_shuzi_10;134;250;36;37;0.5;0.5
+MidCard_laizi_shuzi_11;172;289;36;37;0.5;0.5
+MidCard_laizi_shuzi_12;78;2;34;35;0.5;0.5
+MidCard_laizi_shuzi_13;134;289;36;37;0.5;0.5
+MidCard_laizi_shuzi_2;195;328;36;37;0.5;0.5
+MidCard_laizi_shuzi_3;195;367;36;37;0.5;0.5
+MidCard_laizi_shuzi_4;157;328;36;37;0.5;0.5
+MidCard_laizi_shuzi_5;82;221;36;37;0.5;0.5
+MidCard_laizi_shuzi_6;2;37;36;37;0.5;0.5
+MidCard_laizi_shuzi_7;2;76;36;37;0.5;0.5
+MidCard_laizi_shuzi_8;157;367;36;37;0.5;0.5
+MidCard_laizi_shuzi_9;2;115;36;37;0.5;0.5
+medium_card_bg;142;406;78;104;0.5;0.5
+medium_card_mengban;2;224;78;104;0.5;0.5
+mengban_card;2;330;138;180;0.5;0.5

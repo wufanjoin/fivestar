@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: 685770a9d10e09a439a9065be4daffeb
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LargeCard_commom_shuzi_hei_1
+    21300002: LargeCard_commom_shuzi_hei_10
+    21300004: LargeCard_commom_shuzi_hei_11
+    21300006: LargeCard_commom_shuzi_hei_12
+    21300008: LargeCard_commom_shuzi_hei_13
+    21300010: LargeCard_commom_shuzi_hei_2
+    21300012: LargeCard_commom_shuzi_hei_3
+    21300014: LargeCard_commom_shuzi_hei_4
+    21300016: LargeCard_commom_shuzi_hei_5
+    21300018: LargeCard_commom_shuzi_hei_6
+    21300020: LargeCard_commom_shuzi_hei_7
+    21300022: LargeCard_commom_shuzi_hei_8
+    21300024: LargeCard_commom_shuzi_hei_9
+    21300026: LargeCard_commom_shuzi_hong_1
+    21300028: LargeCard_commom_shuzi_hong_10
+    21300030: LargeCard_commom_shuzi_hong_11
+    21300032: LargeCard_commom_shuzi_hong_12
+    21300034: LargeCard_commom_shuzi_hong_13
+    21300036: LargeCard_commom_shuzi_hong_2
+    21300038: LargeCard_commom_shuzi_hong_3
+    21300040: LargeCard_commom_shuzi_hong_4
+    21300042: LargeCard_commom_shuzi_hong_5
+    21300044: LargeCard_commom_shuzi_hong_6
+    21300046: LargeCard_commom_shuzi_hong_7
+    21300048: LargeCard_commom_shuzi_hong_8
+    21300050: LargeCard_commom_shuzi_hong_9
+    21300052: LargeCard_huase_1
+    21300054: LargeCard_huase_2
+    21300056: LargeCard_huase_3
+    21300058: LargeCard_huase_4
+    21300060: LargeCard_huase_5
+    21300062: LargeCard_king_14
+    21300064: LargeCard_king_15
+    21300066: LargeCard_king_huase_14
+    21300068: LargeCard_king_huase_15
+    21300070: LargeCard_laizi_shuzi_1
+    21300072: LargeCard_laizi_shuzi_10
+    21300074: LargeCard_laizi_shuzi_11
+    21300076: LargeCard_laizi_shuzi_12
+    21300078: LargeCard_laizi_shuzi_13
+    21300080: LargeCard_laizi_shuzi_2
+    21300082: LargeCard_laizi_shuzi_3
+    21300084: LargeCard_laizi_shuzi_4
+    21300086: LargeCard_laizi_shuzi_5
+    21300088: LargeCard_laizi_shuzi_6
+    21300090: LargeCard_laizi_shuzi_7
+    21300092: LargeCard_laizi_shuzi_8
+    21300094: LargeCard_laizi_shuzi_9
+    21300096: large_card_anti
+    21300098: large_card_bgx
+    21300100: large_card_mengban
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_1
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 128
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3550f26a5e4413b439d4ea5a7a248daf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_10
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 176
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdea8653e4837534cbb05e32fd8ec23f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 224
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbab83c286b805141b24b386ee042a43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_12
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 272
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353182265d6822a42ad41b40d3a107c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_13
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 368
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ef3fc9cf7c4a34b931369f7b353695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 416
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7343a41585977934fa6b3ab105c07d62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_3
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 464
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcdb5cf09846beb47a94f6dfa7cd5461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_4
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 320
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d0aec3c5142d748aacfd71192b0ae8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 368
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48e7b2b180857546969ea6064275bcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_6
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 416
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2dc4ab5b20c1642a4dd2a6051774d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_7
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 464
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40eec45de1b8d4e439eff0e51570375f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_8
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 20
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b866f6e5ba8c54a893f37da0a36578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hei_9
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 68
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6abb8abeece604383093410a10f544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 116
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40bcf76fc92db0b4181e87b42631be9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_10
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 164
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af978edffc3858468232b89a0381479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_11
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 82
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213c081da0ec6b440843a1a16b93ebbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_12
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 212
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b250c58ad9575f48a7bd0b91b7c03dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_13
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 260
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbee21ef52a5acb4ea5fb8b5ba18b8c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_2
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 308
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1beef0845cc124a8020f4d5e601f5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 14
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025302f7b26672e4dabb0efb75cdb9e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 62
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a3ab8142ddf19438e947ea872c6b30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_5
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 110
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28a59b0d83e96249845c311fa77be4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 14
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8f25560483cfe47a0b4055c429b907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_7
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 62
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b0580aa053d4a448fd69afc1f5a533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 110
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d891fe7512bd74aba2dc340ca64c03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_commom_shuzi_hong_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 14
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d95fb19016cba4b9596ed3fc3ff75b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_huase_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 7
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e8529037d74d5439aefd803067cf95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_huase_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 7
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b1992291bccf4448a5f17c1b836267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_huase_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 7
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bccc0b28cc7774781c48073649e078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_huase_4
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 7
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1949ecd7666de7248aab03289f1a0e88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_huase_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 7
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0f40c6b979ce14792cb16d6d6e64b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_king_14
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 356
+        width: 22
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87408523c929a7b4fa2f6e68a00af2e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_king_15
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 356
+        width: 22
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cbba7dbc230c8419431a72af598b74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_king_huase_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 158
+        width: 92
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9346e05a1e09a4192e695e37ef33f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_king_huase_15
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 158
+        width: 92
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2612c238b7e6665459997a8ef51dc024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_1
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 62
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062608b1b4bbac64da5d015f1fb2b378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_10
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 110
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af8febaf1214c44485d8ea9772a7ace
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 14
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5969254590d7784686ff053471a69c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_12
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 62
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0fc69483adacad4396981fe035a9357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 110
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc52602525249204cb88f84488e72085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 40
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51d75f33e35fb24e8ba246ffb2d29cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 88
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316e736682bd97e48b4c02e39c8b0cb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 40
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed5bc77aba237347926826cf67f0734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 88
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df27985517f9d240a4969373add0bfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_6
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 40
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b499112f6f3b6584cbf9281318afc24b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_7
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 88
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f7313be5d68bef4294fb0ba0e365f19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 40
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e39a41d811e4242b79cfe8015a59c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LargeCard_laizi_shuzi_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 88
+        width: 42
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2791c0277752f6145b92874140ee41ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large_card_anti
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 324
+        width: 142
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9557eccc3e91d4a99fe93dc61f8375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large_card_bgx
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 136
+        width: 142
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82dcc8c28401004f89ddfe3f041251f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large_card_mengban
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 324
+        width: 142
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bcc161f2514df478e0a30d2bfbf31e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

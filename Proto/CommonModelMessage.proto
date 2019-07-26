@@ -1,0 +1,80 @@
+syntax = "proto3";
+package ETHotfix;
+
+message User 
+{
+	string name  = 1;
+	int64 userId = 2;
+	int64 beans =3;
+	int64 jewel =4;
+	string icon = 5;
+	int32 sex = 6; //1是女 2是男 0是不确定
+	string Ip = 7; //IP地址
+	string Location = 8; //定位地址
+	bool IsOnLine=9;//是否在线
+}
+
+message Commodity
+{
+	int64 CommodityId = 1; //商品ID
+	int64 CommodityType = 2; //商品类型
+	int32 Amount = 3; //数量
+	int32 Price = 4; //价格
+	int64 MonetaryType = 5;//所需要的货币种类
+	int32 Lv = 6;  //等级
+}
+
+message SignInAward
+{
+	int64 GoodsId = 1; //商品ID
+	int32 Amount = 2; //数量
+	int32 NumberDays = 3; //第几天天数
+}
+
+message UserSingInState
+{
+	int64 UserId = 1; //用户的Id
+	int64 SingInTime = 2; //签到时间
+	int32 SingInDays = 3; //已经签到的天数
+}
+
+
+
+message GetGoodsOne
+{
+	int64 GoodsId = 1; //商品ID
+	int32 GetAmount = 2; //得到的数量
+	int64 NowAmount = 3; //现有的数量
+}
+
+//房间信息
+message RoomInfo
+{
+  int32 RoomId = 1; // 房间Id
+  int32 FriendsCircleId=2;//对应的亲友圈ID
+  repeated int32  RoomConfigLists = 3; // 房间配置信息
+  repeated MatchPlayerInfo MatchPlayerInfos = 4;//玩家信息
+}
+
+//游戏匹配房间配置 
+message MatchRoomConfig
+{
+	string name = 1; //匹配房间显示名字
+	int32 BesansLowest = 2; //随机匹配豆子最低数量
+	int32 BaseScore = 3; //随机匹配的底分
+	int32 CostConsume = 4;//每小局消耗豆子的数量
+	int32 MatchRoomId = 5;//房间ID
+	int64 ToyGameId = 6;//游戏ID
+	int32 GameNumber = 7;//房间人数
+	repeated int32 RoomConfigs = 8;//房间配置信息
+}
+
+//匹配到的玩家信息
+message MatchPlayerInfo
+{
+	int32 SeatIndex = 1; //座位索引
+	User user = 2; //玩家信息
+	int64 SessionActorId = 3; //玩家所在网关的对象Id
+	bool IsAI=4;//是否是AI
+}
+

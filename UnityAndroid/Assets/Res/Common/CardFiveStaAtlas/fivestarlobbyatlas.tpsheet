@@ -1,0 +1,51 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: fivestarlobbyatlas.png (2048 x 1024)
+# $TexturePacker:SmartUpdate:e7525be0f026d8450523c001b0fd8251:ecd6569ab2b2dc31fab7a65b67ee1b67:20405fa5b868e1eedcdf7c80f0d04ec2$
+#
+
+fivestarlobbyatlas_1;1059;59;100;91;0.5;0.5
+fivestarlobbyatlas_10;1258;172;75;608;0.5;0.5
+fivestarlobbyatlas_11;987;152;269;628;0.5;0.5
+fivestarlobbyatlas_12;2;352;110;670;0.5;0.5
+fivestarlobbyatlas_13;1938;794;66;65;0.5;0.5
+fivestarlobbyatlas_14;1722;31;68;64;0.5;0.5
+fivestarlobbyatlas_15;1722;97;276;85;0.5;0.5
+fivestarlobbyatlas_16;1872;793;64;66;0.5;0.5
+fivestarlobbyatlas_17;1338;21;41;38;0.5;0.5
+fivestarlobbyatlas_18;648;6;32;33;0.5;0.5
+fivestarlobbyatlas_19;2;2;28;28;0.5;0.5
+fivestarlobbyatlas_2;897;55;160;95;0.5;0.5
+fivestarlobbyatlas_20;682;8;31;31;0.5;0.5
+fivestarlobbyatlas_21;114;377;790;4;0.5;0.5
+fivestarlobbyatlas_22;1161;61;241;89;0.5;0.5
+fivestarlobbyatlas_23;575;41;320;50;0.5;0.5
+fivestarlobbyatlas_24;114;383;871;639;0.5;0.5
+fivestarlobbyatlas_25;890;200;95;95;0.5;0.5
+fivestarlobbyatlas_26;32;6;614;24;0.5;0.5
+fivestarlobbyatlas_27;715;9;621;30;0.5;0.5
+fivestarlobbyatlas_28;1325;861;712;64;0.5;0.5
+fivestarlobbyatlas_29;1819;625;224;160;0.5;0.5
+fivestarlobbyatlas_3;906;297;76;84;0.5;0.5
+fivestarlobbyatlas_30;1948;927;96;95;0.5;0.5
+fivestarlobbyatlas_31;1404;14;254;168;0.5;0.5
+fivestarlobbyatlas_32;322;93;279;282;0.5;0.5
+fivestarlobbyatlas_33;987;903;336;119;0.5;0.5
+fivestarlobbyatlas_34;987;782;335;119;0.5;0.5
+fivestarlobbyatlas_35;1335;184;482;600;0.5;0.5
+fivestarlobbyatlas_36;1338;947;608;75;0.5;0.5
+fivestarlobbyatlas_37;603;284;285;91;0.5;0.5
+fivestarlobbyatlas_4;1638;787;232;72;0.5;0.5
+fivestarlobbyatlas_43;930;159;40;39;0.5;0.5
+fivestarlobbyatlas_44;897;158;31;40;0.5;0.5
+fivestarlobbyatlas_45;603;158;38;40;0.5;0.5
+fivestarlobbyatlas_46;603;206;274;76;0.5;0.5
+fivestarlobbyatlas_5;1660;35;60;147;0.5;0.5
+fivestarlobbyatlas_6;2;32;318;318;0.5;0.5
+fivestarlobbyatlas_7;1324;786;312;73;0.5;0.5
+fivestarlobbyatlas_8;643;114;252;84;0.5;0.5
+fivestarlobbyatlas_9;322;33;251;58;0.5;0.5

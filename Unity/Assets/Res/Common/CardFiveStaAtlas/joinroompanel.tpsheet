@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: joinroompanel.png (1024 x 1024)
+# $TexturePacker:SmartUpdate:611d531868bfadf34976c5efcab11553:b0c4184cb2fb087cbc31029c92840e23:4531f11318772b1cd25056ff8b5b1580$
+#
+
+joinroompanel_1;832;902;70;42;0.5;0.5
+joinroompanel_2;832;860;82;40;0.5;0.5
+joinroompanel_3;832;946;148;76;0.5;0.5
+joinroompanel_4;460;284;456;101;0.5;0.5
+joinroompanel_5;2;387;828;635;0.5;0.5
+joinroompanel_6;2;240;255;42;0.5;0.5
+joinroompanel_7;2;284;456;101;0.5;0.5

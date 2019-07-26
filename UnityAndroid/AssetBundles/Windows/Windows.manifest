@@ -1,0 +1,69 @@
+ManifestFileVersion: 0
+CRC: 2621353034
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: loginpanel.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: code.unity3d
+      Dependencies: {}
+    Info_2:
+      Name: config.unity3d
+      Dependencies: {}
+    Info_3:
+      Name: uilogin.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: unit.unity3d
+      Dependencies: {}
+    Info_5:
+      Name: uilobby.unity3d
+      Dependencies: {}
+    Info_6:
+      Name: common/loginpanel.unity3d
+      Dependencies:
+        Dependency_0: loginpanel.unity3d
+    Info_7:
+      Name: common/lobbybottompanel.unity3d
+      Dependencies: {}
+    Info_8:
+      Name: common/lobbymiddlepanel.unity3d
+      Dependencies: {}
+    Info_9:
+      Name: common/lobbytoppanel.unity3d
+      Dependencies: {}
+    Info_10:
+      Name: common/basishallpanel.unity3d
+      Dependencies:
+        Dependency_0: common/lobbymiddlepanel.unity3d
+    Info_11:
+      Name: common/normalhintpanel.unity3d
+      Dependencies: {}
+    Info_12:
+      Name: common/popuphintpanel.unity3d
+      Dependencies: {}
+    Info_13:
+      Name: common/playerinfopanel.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: common/settingpanel.unity3d
+      Dependencies: {}
+    Info_15:
+      Name: common/shoppanel.unity3d
+      Dependencies: {}
+    Info_16:
+      Name: common/lobbypanel.unity3d
+      Dependencies: {}
+    Info_17:
+      Name: common/loadingiconpanel.unity3d
+      Dependencies: {}
+    Info_18:
+      Name: common/activitylobbypanel.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: common/announcementpanel.unity3d
+      Dependencies: {}
+    Info_20:
+      Name: common/sharepanel.unity3d
+      Dependencies: {}

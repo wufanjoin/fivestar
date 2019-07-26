@@ -1,0 +1,14 @@
+{ "_t" : "StartConfig", "_id" : NumberLong("96832366182401"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20000" }, { "_t" : "OuterConfig", "Address" : "172.31.1.100:10000", "Address2" : "47.244.176.21:10000" }], "AppId" : 1, "AppType" : "Manager", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("98565723062316"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20001" },{ "_t" : "DBConfig", "ConnectionString" : "mongodb://wufan:wufan123@172.31.1.100:27017", "DBName" : "GaneGather" }], "AppId" : 2, "AppType" : "DB", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("98565862653977"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:10002" }], "AppId" : 3, "AppType" : "Location", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("96832366182401"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20003" }, { "_t" : "OuterConfig", "Address" : "172.31.1.100:10002", "Address2" : "47.244.176.21:10002" }], "AppId" : 4, "AppType" : "Realm", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("96832366182402"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20004" }, { "_t" : "OuterConfig", "Address" : "172.31.1.100:10003", "Address2" : "47.244.176.21:10003" }], "AppId" : 5, "AppType" : "Gate", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("96832366182403"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20005" }, { "_t" : "OuterConfig", "Address" : "172.31.1.100:10004", "Address2" : "47.244.176.21:10004" }], "AppId" : 6, "AppType" : "Gate", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("96832366182404"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20006" }, { "_t" : "OuterConfig", "Address" : "172.31.1.100:10005", "Address2" : "47.244.176.21:10005" }], "AppId" : 7, "AppType" : "Gate", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("98565723062315"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20007" }], "AppId" : 8, "AppType" : "User", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("98565723062316"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20008" }], "AppId" : 9, "AppType" : "Lobby", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("98565723062318"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20009" }], "AppId" : 10, "AppType" : "Match", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("98565723062319"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20010" }], "AppId" : 11, "AppType" : "FriendsCircle", "ServerIP" : "*" }
+{ "_t" : "StartConfig", "_id" : NumberLong("98565723062320"), "C" : [{ "_t" : "InnerConfig", "Address" : "172.31.1.100:20011" }], "AppId" : 12, "AppType" : "CardFiveStar", "ServerIP" : "*" }
+
+                                                                                                   

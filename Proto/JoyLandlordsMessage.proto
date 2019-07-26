@@ -1,0 +1,157 @@
+syntax = "proto3";
+import "CommonModelMessage.proto";
+package ETHotfix;
+
+//开始游戏通知
+message Actor_JoyLds_StartGame // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated JoyLds_PlayerInfo PlayerInfos = 1; //开始游戏所有玩家信息
+}
+
+//发牌通知
+message Actor_JoyLds_Deal // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	repeated int32 Cards = 1; //只有自己的牌 其他玩家的牌都是固定17张
+}
+
+//可以叫地主
+message Actor_JoyLds_CanCallLanlord // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+}
+
+//叫地主结果
+message Actor_JoyLds_CallLanlord // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+	bool  result = 2;
+}
+
+//可以加倍
+message Actor_JoyLds_CanAddTwice // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+}
+
+//加倍结果
+message Actor_JoyLds_AddTwice // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+	bool  result = 2;
+}
+
+
+//可以抢地主
+message Actor_JoyLds_CanRobLanlord // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+}
+
+//抢地主结果
+message Actor_JoyLds_RobLanlord // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+	bool  result = 2;
+}
+//没人叫地主重新发牌
+message Actor_JoyLds_AnewDeal // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+}
+//游戏结束 玩家选择退出房间
+message Actor_JoyLds_OutRoom // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1; //退出玩家索引
+}
+//解散房间
+message Actor_JoyLds_DissolveRoom // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+}
+//玩家准备
+message Actor_JoyLds_Prepare  // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;  //准备玩家索引
+}
+//确定地主和农民阵营
+message Actor_JoyLds_ConfirmCamp // IHandActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 LandlordSeatIndex = 1;
+	repeated int32 LandlordThreeCard = 2;
+	int32 SeatIndex = 3;
+	repeated int32 Hands = 4;
+}
+
+//可以出牌
+message Actor_JoyLds_CanPlayCard // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+	bool IsFirst = 2; 
+}
+
+//玩家出牌
+message Actor_JoyLds_PlayCard // IHandActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+	repeated int32 cards = 2;
+	int32 playCardType = 3;
+	repeated int32 Hands = 4;
+}
+
+//玩家不出牌
+message Actor_JoyLds_DontPlay // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 SeatIndex = 1;
+}
+
+//游戏结果
+message Actor_JoyLds_GameResult // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int32 WinSeatIndex = 1;
+	repeated JoyLds_PlayerResult PlayerResults = 2;
+}
+
+//单个玩家计算结果
+message JoyLds_PlayerResult
+{
+	int32 SeatIndex = 1;
+	int32 GetBeabs = 2;
+}
+//都地主玩家信息
+message JoyLds_PlayerInfo
+{
+	int32 SeatIndex = 1; //座位索引
+	User user = 2; //玩家信息
+}

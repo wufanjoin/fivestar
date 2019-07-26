@@ -1,0 +1,114 @@
+//验证服向网关服请求秘钥
+message R2G_GetLoginKey // IRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 1;
+}
+
+message G2R_GetLoginKey // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 Key = 1;
+}
+
+//验证服向用户服验证用户
+message R2U_VerifyUser // IRequest
+{
+	int32 RpcId = 90;
+	int32 LoginType = 1;	// 登陆方式1.编辑状态2.游客3.微信
+	int32 PlatformType = 2;	//平台类型1.安卓2.IOS 3.PC
+	string DataStr = 3;	// 登对信息对象
+}
+
+message U2R_VerifyUser // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 UserId = 1;
+	string Password = 2;
+}
+
+
+//网关通知其他服玩家下线
+message G2S_UserOffline // IMessage
+{
+	int32 RpcId = 90;
+	int64 UserId = 1;
+}
+
+//网关通知其他服玩家上线
+message G2S_UserOnline // IMessage
+{
+	int32 RpcId = 90;
+	int64 UserId = 1;
+	int64 SessionActorId = 2;
+}
+
+//任意服务器通知用户服 玩家得到了物品
+message S2U_UserGetGoods // IRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 1;
+	repeated GetGoodsOne GetGoodsList = 2;
+	bool isShowHintPanel = 3;
+	int32 GoodsChangeType = 4;//改变物品 原因的类型
+}
+
+message U2S_UserGetGoods // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	User user = 1;
+}
+
+//获取一批不在线的玩家 当AI机器人
+message M2U_GetAIUser // IRequest
+{
+	int32 RpcId = 90;
+}
+
+message U2M_GetAIUser // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	repeated User users = 1;
+}
+
+//通知网关 玩家开始游戏
+message Actor_UserStartGame // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int64 SessionActorId = 2; //用户所在游戏服的对象Id
+}
+//通知网关 玩家结束游戏
+message Actor_UserEndGame // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+}
+
+//网关服发给游戏服 通知用户下线
+message Actor_UserOffLine // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+}
+
+//匹配服 通知其他服务器 玩家完成一局房卡游戏
+message M2S_UserFinishRoomCardGame // IMessage
+{
+	int32 RpcId = 90;
+	repeated int64 UserIds = 1; //完成房卡 玩家的userid
+}
+
+//大厅服 通知其他服务器 到了周一00点刷新
+message L2S_WeekRefresh // IMessage
+{
+	int32 RpcId = 90;
+}

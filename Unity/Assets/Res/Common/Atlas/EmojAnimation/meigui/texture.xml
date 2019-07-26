@@ -1,0 +1,6 @@
+<TextureAtlas name="meigui" imagePath="texture.png">
+  <SubTexture name="meiguihua" x="235" y="0" width="152" height="150"/>
+  <SubTexture name="guge/ham_ch002_c000750_shanguang--2" x="0" y="0" width="234" height="234"/>
+  <SubTexture name="guge/hua" x="442" y="0" width="44" height="44"/>
+  <SubTexture name="guge/hua_piao" x="388" y="0" width="52" height="89"/>
+</TextureAtlas>

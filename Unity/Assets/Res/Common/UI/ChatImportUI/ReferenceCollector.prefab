@@ -1,0 +1,318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1347948263200122}
+  m_IsPrefabParent: 1
+--- !u!1 &1347948263200122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224493516649934994}
+  - component: {fileID: 114847603529843994}
+  m_Layer: 5
+  m_Name: ReferenceCollector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114847603529843994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1347948263200122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502d8cafd6a5a0447ab1db9a24cdcb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - key: bang0001
+    gameObject: {fileID: 21300000, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: bang0002
+    gameObject: {fileID: 21300002, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: bang0003
+    gameObject: {fileID: 21300004, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: bang0004
+    gameObject: {fileID: 21300006, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: bang0005
+    gameObject: {fileID: 21300008, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: bang0006
+    gameObject: {fileID: 21300010, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: bang0007
+    gameObject: {fileID: 21300012, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: bang0008
+    gameObject: {fileID: 21300014, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: daku0001
+    gameObject: {fileID: 21300016, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: daku0002
+    gameObject: {fileID: 21300018, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: daku0003
+    gameObject: {fileID: 21300020, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0001
+    gameObject: {fileID: 21300022, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0002
+    gameObject: {fileID: 21300024, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0003
+    gameObject: {fileID: 21300026, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0004
+    gameObject: {fileID: 21300028, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0005
+    gameObject: {fileID: 21300030, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0006
+    gameObject: {fileID: 21300032, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0007
+    gameObject: {fileID: 21300034, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0008
+    gameObject: {fileID: 21300036, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0009
+    gameObject: {fileID: 21300038, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: deyi0010
+    gameObject: {fileID: 21300040, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0001
+    gameObject: {fileID: 21300042, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0002
+    gameObject: {fileID: 21300044, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0003
+    gameObject: {fileID: 21300046, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0004
+    gameObject: {fileID: 21300048, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0005
+    gameObject: {fileID: 21300050, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0006
+    gameObject: {fileID: 21300052, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0007
+    gameObject: {fileID: 21300054, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0008
+    gameObject: {fileID: 21300056, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0009
+    gameObject: {fileID: 21300058, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0010
+    gameObject: {fileID: 21300060, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: fanu0011
+    gameObject: {fileID: 21300062, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haixiu0001
+    gameObject: {fileID: 21300064, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haixiu0002
+    gameObject: {fileID: 21300066, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haixiu0003
+    gameObject: {fileID: 21300068, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haixiu0004
+    gameObject: {fileID: 21300070, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haixiu0005
+    gameObject: {fileID: 21300072, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haixiu0006
+    gameObject: {fileID: 21300074, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haixiu0007
+    gameObject: {fileID: 21300076, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haixiu0008
+    gameObject: {fileID: 21300078, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0001
+    gameObject: {fileID: 21300080, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0002
+    gameObject: {fileID: 21300082, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0003
+    gameObject: {fileID: 21300084, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0004
+    gameObject: {fileID: 21300086, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0005
+    gameObject: {fileID: 21300088, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0006
+    gameObject: {fileID: 21300090, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0007
+    gameObject: {fileID: 21300092, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0008
+    gameObject: {fileID: 21300094, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: han0009
+    gameObject: {fileID: 21300096, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0001
+    gameObject: {fileID: 21300098, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0002
+    gameObject: {fileID: 21300100, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0003
+    gameObject: {fileID: 21300102, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0004
+    gameObject: {fileID: 21300104, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0005
+    gameObject: {fileID: 21300106, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0006
+    gameObject: {fileID: 21300108, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0007
+    gameObject: {fileID: 21300110, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0008
+    gameObject: {fileID: 21300112, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0009
+    gameObject: {fileID: 21300114, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: haqian0010
+    gameObject: {fileID: 21300116, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: kanren0001
+    gameObject: {fileID: 21300118, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: kanren0002
+    gameObject: {fileID: 21300120, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: kelian0001
+    gameObject: {fileID: 21300122, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: kelian0002
+    gameObject: {fileID: 21300124, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: kelian0003
+    gameObject: {fileID: 21300126, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0001
+    gameObject: {fileID: 21300128, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0002
+    gameObject: {fileID: 21300130, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0003
+    gameObject: {fileID: 21300132, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0004
+    gameObject: {fileID: 21300134, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0005
+    gameObject: {fileID: 21300136, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0006
+    gameObject: {fileID: 21300138, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0007
+    gameObject: {fileID: 21300140, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0008
+    gameObject: {fileID: 21300142, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0009
+    gameObject: {fileID: 21300144, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: outu0010
+    gameObject: {fileID: 21300146, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: se0001
+    gameObject: {fileID: 21300148, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: se0002
+    gameObject: {fileID: 21300150, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: se0003
+    gameObject: {fileID: 21300152, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: se0004
+    gameObject: {fileID: 21300154, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: shaoxiang0001
+    gameObject: {fileID: 21300156, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: shaoxiang0002
+    gameObject: {fileID: 21300158, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: shaoxiang0003
+    gameObject: {fileID: 21300160, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: shaoxiang0004
+    gameObject: {fileID: 21300232, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: touxiao0001
+    gameObject: {fileID: 21300164, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: touxiao0002
+    gameObject: {fileID: 21300166, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: touxiao0003
+    gameObject: {fileID: 21300168, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: touxiao0004
+    gameObject: {fileID: 21300170, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ye0001
+    gameObject: {fileID: 21300172, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ye0002
+    gameObject: {fileID: 21300174, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ye0003
+    gameObject: {fileID: 21300176, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ye0004
+    gameObject: {fileID: 21300178, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ye0005
+    gameObject: {fileID: 21300180, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ye0006
+    gameObject: {fileID: 21300182, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ye0007
+    gameObject: {fileID: 21300184, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: yun0001
+    gameObject: {fileID: 21300186, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: yun0002
+    gameObject: {fileID: 21300188, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: yun0003
+    gameObject: {fileID: 21300190, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: yun0004
+    gameObject: {fileID: 21300192, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zaijian0001
+    gameObject: {fileID: 21300194, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zaijian0002
+    gameObject: {fileID: 21300196, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zaijian0003
+    gameObject: {fileID: 21300198, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zaijian0004
+    gameObject: {fileID: 21300200, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zaijian0005
+    gameObject: {fileID: 21300202, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0001
+    gameObject: {fileID: 21300204, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0002
+    gameObject: {fileID: 21300206, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0003
+    gameObject: {fileID: 21300208, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0004
+    gameObject: {fileID: 21300210, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0005
+    gameObject: {fileID: 21300212, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0006
+    gameObject: {fileID: 21300214, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0007
+    gameObject: {fileID: 21300216, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0008
+    gameObject: {fileID: 21300218, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: zhuakuang0009
+    gameObject: {fileID: 21300220, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ziya0001
+    gameObject: {fileID: 21300222, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ziya0002
+    gameObject: {fileID: 21300224, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ziya0003
+    gameObject: {fileID: 21300226, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ziya0004
+    gameObject: {fileID: 21300228, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ziya0005
+    gameObject: {fileID: 21300230, guid: 21fffaad0ab1e4a4eb3efad13f70f49f, type: 3}
+  - key: ExpressionAnimGo
+    gameObject: {fileID: 1472494508936144, guid: 5936e446c9f7e6c4ba635e171aa7fb9a,
+      type: 2}
+  - key: manpeediness_1
+    gameObject: {fileID: 8300000, guid: 3c44dfd6b1d94e648b0eb2d25a1e09b1, type: 3}
+  - key: manpeediness_2
+    gameObject: {fileID: 8300000, guid: 9a83b5212be0565449b8c98575efa341, type: 3}
+  - key: manpeediness_3
+    gameObject: {fileID: 8300000, guid: 62147cb9ecfeb394cbcfbdc3fbec3477, type: 3}
+  - key: manpeediness_4
+    gameObject: {fileID: 8300000, guid: 11dab792d787f7f4d87d202870095ee3, type: 3}
+  - key: manpeediness_5
+    gameObject: {fileID: 8300000, guid: 4e7ea0bf40864c6459a23e196fe44861, type: 3}
+  - key: manpeediness_6
+    gameObject: {fileID: 8300000, guid: 0a02d98682e5e23438c8166e181380f1, type: 3}
+  - key: womanpeediness_1
+    gameObject: {fileID: 8300000, guid: 978bb54c267ca7c42b9fe635174d6c95, type: 3}
+  - key: womanpeediness_2
+    gameObject: {fileID: 8300000, guid: d4177705e7d92b04aa05e40a100dfe8f, type: 3}
+  - key: womanpeediness_3
+    gameObject: {fileID: 8300000, guid: d3fa4f67e39fc9743b1fe31adeb3c68a, type: 3}
+  - key: womanpeediness_4
+    gameObject: {fileID: 8300000, guid: 1c7d574bf3441bd4c8de2bc0a8b0c9cb, type: 3}
+  - key: womanpeediness_5
+    gameObject: {fileID: 8300000, guid: 378c20ce5e8ace548a260bf9d9333a7a, type: 3}
+  - key: womanpeediness_6
+    gameObject: {fileID: 8300000, guid: c68af146d187b884db2859af155c405f, type: 3}
+--- !u!224 &224493516649934994
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1347948263200122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}

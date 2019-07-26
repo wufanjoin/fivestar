@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# Sprite sheet: kecaozuoanniu.png (256 x 512)
+# $TexturePacker:SmartUpdate:bc40be8e4375c50eb0322373012c01e2:fe03a16050facc9e8bcb7cc3aa9074d0:8756b3e8d2aea38794867532464df0b0$
+#
+
+chi;2;151;92;89;0.5;0.5
+gang;2;422;89;88;0.5;0.5
+hu;92;242;87;88;0.5;0.5
+liang;2;332;87;88;0.5;0.5
+peng;2;242;88;88;0.5;0.5
+qi;91;332;88;88;0.5;0.5
+ting;93;422;87;88;0.5;0.5

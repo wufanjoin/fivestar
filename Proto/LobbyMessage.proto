@@ -1,0 +1,520 @@
+syntax = "proto3";
+import "CommonModelMessage.proto";
+package ETHotfix;
+
+//请求公告
+message C2L_GetAnnouncement // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetAnnouncement // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//请求购买商品
+message C2L_BuyCommodity // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int64 CommodityId = 1;//商品ID
+}
+
+message L2C_GetAnnouncement // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	string PrepayId = 1;//这两个字段只有商品
+	string NonceStr = 2;
+}
+
+//向大厅服请求商品数据
+message C2L_GetCommodityList // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetCommodityList // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated Commodity BeansList=1;
+	repeated Commodity JewelList=2;
+}
+
+//向大厅服请求每次首次分享成功可以活动的钻石数量
+message C2L_GetTheFirstShareAward // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetTheFirstShareAward // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	int32 JeweleAmount = 1;//钻石数量
+}
+
+//每日分享朋友圈成功 领取奖励
+message C2L_GetEverydayShareAward // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetEverydayShareAward // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//客户端向大厅服请求签到奖励列表
+message C2L_GetSignInAwardList // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetSignInAwardList // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated SignInAward SignInAwardList = 1; //签到奖励列表
+	UserSingInState userSinginInfo = 2;	//当前用户签到信息
+}
+
+//客户端向大厅服请求今日签到
+message C2L_TodaySignIn // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_TodaySignIn // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//请求游戏匹配房间配置
+message C2L_GetMatchRoomConfigs // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int64 ToyGameId = 1;
+}
+
+message L2C_GetMatchRoomConfigs // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated MatchRoomConfig MatchRoomConfigs = 1;
+}
+
+//请求推广奖励信息
+message C2L_GetGenralizeInfo // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetGenralizeInfo // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	GeneralizeAwardInfo AwardInfo=1;//推广奖励信息
+}
+
+//推广奖励信息
+message GeneralizeAwardInfo 
+{
+   int32 GeneralizeNumber=1;
+   int32 GetJewelTotalNum=2;
+}
+
+//请求领取新手被邀请礼包的状态
+message C2L_GetGreenGiftStatu // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetGreenGiftStatu // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	bool isHaveGet=1;//是否领取过了
+}
+
+//领取新手被邀请礼包
+message C2L_GetGreenGift // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int64 Code = 1;//邀请的邀请Code 一般就是UserId
+}
+
+message L2C_GetGreenGift // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//获取客服信息
+message C2L_GetService // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetService // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated ServiceInfo ServiceInfos= 1;//客服信息
+}
+
+message ServiceInfo
+{
+    string Type = 1;//客服的类型VX还是QQ
+	string Number = 2;//客服信息的号码
+}
+
+//获取是不是代理
+message C2L_GetAgencyStatu // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetAgencyStatu // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	bool IsAgency=1;//是不是代理
+}
+
+//卖出钻石
+message C2L_SaleJewel // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int64 MaiJiaUser = 1;//买的userId
+	int32 JewelNum = 2;//钻石数量
+}
+
+message L2C_SaleJewel // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//获取销售记录
+message C2L_GetMarketRecord // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetMarketRecord // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated MarketInfo MarketInfos = 1;//销售记录信息
+}
+
+//单个销售信息
+message MarketInfo
+{
+   int64 Time = 1;//销售时间
+   int64 MaiJiaUserId = 2;//买家的UserId
+   string MaiJiaName = 3;//买家的名字
+   int32 JewelNum = 4;//卖出的钻石数量
+}
+
+//请求转盘抽奖
+message C2L_TurntableDrawLottery // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_TurntableDrawLottery // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	int32 TurntableGoodsId = 1;//中将的物品ID
+}
+
+//获取转盘抽奖物品列表
+message C2L_GetTurntableGoodss // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetTurntableGoodss // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated TurntableGoods Goodss = 1;//抽奖物品列表
+}
+
+//抽奖物品
+message TurntableGoods
+{
+    int32 TurntableGoodsId = 1;//奖品ID
+    int64 GoodsId = 2;//物品的ID
+    int32 Amount = 3;//物品的数量
+	int32 Probability=4;//抽奖的概率
+}
+
+//获取可以免费抽奖的次数
+message C2L_GetFreeDrawLotteryCount // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetFreeDrawLotteryCount // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	int32 Count = 1;//抽奖次数
+}
+
+
+//获取抽奖记录
+message C2L_GetWinPrizeRecord // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetWinPrizeRecord // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated WinPrizeRecord Records = 1;//全部中奖记录
+}
+
+message WinPrizeRecord
+{
+    int32 WinPrizeId = 1;//中奖记录Id
+    int64 UserId = 2;//中奖人的UserId
+	int64 Time = 3;//中奖时间
+	int64 GoodsId = 4;//物品的ID
+	int32 Amount = 5;//物品数量
+	int32 Type = 6;//兑奖状态 0是未兑奖 其他是已兑奖
+	string Remark = 7;//备注
+}
+
+//查询大局战绩
+message C2L_GetPlayerMiltary // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int64 QueryUserId=1;//查询玩家的UserId
+	int32 FriendCircleId=2;//所属的亲友圈ID
+}
+
+message L2C_GetPlayerMiltary // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated Miltary Miltarys = 1;//全部大局战绩
+}
+
+//大局战绩信息
+message Miltary
+{
+  int32 MiltaryId=1;//录像Id 对应小局的小局信息的录像id
+  int32 RoomNumber=2;//房号
+  int32 FriendCircleId=3;//所属的亲友圈ID 0就是 正常房卡打牌 不在亲友圈里面
+  int64 ToyGameId=4;//所属游戏ID
+  int64 Time=5;//战绩时间
+  repeated MiltaryPlayerInfo PlayerInofs=6;//玩家信息
+  
+}
+
+//大局玩家信息
+message MiltaryPlayerInfo
+{
+  string Name=1;//名字
+  int32 TotalScore=2;//总分
+  int64 UserId=3;//用户id
+}
+
+//查询大局里面的所有小局战绩
+message C2L_GetMiltarySmallInfo // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 MiltaryId=1;//所对应的大局战绩ID
+}
+
+message L2C_GetMiltarySmallInfo // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	MiltarySmallInfo MiltarySmallAllInfo=2;//所有小局信息
+}
+
+//详细战绩信息
+message MiltarySmallInfo
+{
+  int32 MiltaryId=1;
+  repeated ParticularMiltary ParticularMiltarys=2;//所有小局信息
+}
+
+//详细战绩里面没小局信息
+message ParticularMiltary
+{
+  int32 DataId=1;//对应的录像战绩数据Id
+  int64 Time=2;//对局时间
+  repeated int32 GetScoreInfos=3;//得分信息
+}
+
+//查询录像数据
+message C2L_GetMiltaryRecordDataInfo // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 DataId=1;//录像数据Id
+}
+
+message L2C_GetMiltaryRecordDataInfo // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	ParticularMiltaryRecordDataInfo RecordDataInfo = 1;//录像信息
+}
+
+//录像过程全部数据
+message ParticularMiltaryRecordDataInfo
+{
+  int32 DataId=1;//对应的录像战绩数据Id
+  int64 ToyGameId=2;//对应的游戏类型Id
+  repeated MiltaryRecordData MiltaryRecordDatas=3;//全部对局信息
+}
+
+//录像过程中的单个数据
+message MiltaryRecordData
+{
+  int32 Opcode=1;//实体的协议号
+  bytes Data=2;//实体协议数据
+}
+
+//领取每日救济金
+message C2L_GetReliefPayment // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message L2C_GetReliefPayment // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int32 BeansNum = 1;//领取的豆子数
+}
+
+//查询User信息
+message C2L_GetUserInfo // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	repeated int64 QueryUserIds=1;//要查询的userId
+}
+
+message L2C_GetUserInfo // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated User UserInfos=1;//查询到的user信息
+}
+
+
+//查询抽奖记录
+message C2L_QueryWinPrizeRecord // IAdministratorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+	int64 QueryUserId = 1;
+}
+
+message L2C_QueryWinPrizeRecord // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated WinPrizeRecord Records = 1;//全部中奖记录
+}
+
+//更改中奖记录
+message C2L_ChangeWinPrizeRecordState // IAdministratorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+	int64 WinPrizeId = 1;//中奖记录Id
+	int32 Type = 2;//状态类型
+	string Remark = 3;//备注信息
+}
+
+message L2C_ChangeWinPrizeRecordState // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//设置代理等级
+message C2L_SetAgencyLv // IAdministratorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	string Account = 92;
+	string Password = 93;
+	int64 AgencyUserId = 1;//设置代理的UserId
+	int32 AgencyLv = 2;//代理等级
+}
+
+message L2C_SetAgencyLv // IResponse
+{
+	int32 RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}

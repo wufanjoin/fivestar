@@ -1,0 +1,1 @@
+{"AssetBundleServerUrl":"http://11aitao.com/","Address":"116.62.242.85:10002"}

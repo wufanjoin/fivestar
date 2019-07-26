@@ -1,0 +1,248 @@
+syntax = "proto3";
+import "CommonModelMessage.proto";
+package ETHotfix;
+
+//请求开始匹配
+message C2M_StartMatch // IUserActorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	User User = 92;
+	int64 SessionActorId = 93; //网关的InsinId
+	int64 MatchRoomId = 1;	// 匹配房间ID
+	
+}
+
+message M2C_StartMatch // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//请求创建创建房间 
+message C2M_CreateRoom // IUserActorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	User User = 92;
+	int64 SessionActorId = 93; //网关的InsinId
+	int64 ToyGameId = 1; //游戏类型ID
+	repeated int32  RoomConfigLists = 2; // 房间配置信息
+	int32 FriendsCircleId = 3;//亲友圈ID 如果不为0就是在亲友群创建的房间 
+}
+
+message M2C_CreateRoom // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	RoomInfo RoomInfo = 1; // 房间信息
+}
+
+//请求加入房间 
+message C2M_JoinRoom // IUserActorRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	User  User = 92;
+	int64 SessionActorId = 93; //网关的InsinId
+	int32 RoomId = 1; // 房间Id
+	
+}
+
+message M2C_JoinRoom // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	RoomInfo RoomInfo = 1; // 房间信息
+}
+
+
+
+
+//请求退出房间 
+message C2M_OutRoom // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	
+}
+
+message M2C_OutRoom // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+
+//其他玩家加入房间
+message Actor_OtherJoinRoom // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	MatchPlayerInfo playerInfo = 1; //加入房间玩家信息
+}
+
+//其他玩家退出房间
+message Actor_OtherOutRoom // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int64 UserId = 1; //退出房间玩家ID
+}
+
+//匹配服通知游戏服暂停计时 就是暂停游戏 
+message Actor_PauseRoomGame // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	bool IsPause = 1;//是否暂停 false就是结束暂停
+}
+
+//匹配服通知游戏服房间解散
+message Actor_RoomDissolve // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+}
+
+//游戏服通知匹配服房间解散
+message S2M_RoomDissolve // IMessage
+{
+	int32 RpcId = 90;
+	int32 RoomId = 1; //解散房间ID
+	int32 CurrOfficNum = 2;//当前局数
+	int32 CurrRoomStateType = 3;//房间当前状态
+}
+
+//玩家投票解散房间选择
+message Actor_VoteDissolveSelect // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	bool IsConsent = 1; //玩家是否同意
+}
+
+//玩家投票解散房间结果
+message Actor_VoteDissolveRoomResult // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int64 SponsorUserId=1;//发起人的UsserId
+	repeated VoteInfo voteInfos = 2; //所有玩家投票信息
+	int32 result = 3; //-1不同意 没解散 0进行中 1所有人同意解散房间
+}
+
+//单个玩家投票信息
+message VoteInfo 
+{
+	int64 UserId = 1; //投票玩家的id
+	bool IsConsent = 2; //玩家是否同意
+}
+
+//玩家聊天请求
+message C2M_UserChat // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	ChatInfo ChatInfo = 1;//聊天信息
+}
+
+message M2C_UserChat // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+}
+
+//广播Actor的聊天信息
+message Actor_UserChatInfo // IActorMessage
+{
+	int32 RpcId = 90;
+	int64 ActorId = 94;
+	int64 UserId = 1;//发消息人的userID
+	ChatInfo ChatInfo = 2;//聊天信息
+}
+
+//聊天信息
+message ChatInfo 
+{
+	int32 ChatType = 1; //聊天类型 (1.文字 2.快捷文字 3.正常动态表情 4.魔法表情 5.语音)
+	string Content = 2; // 聊天内容
+	bytes VoiceContent = 3;//语音内容
+}
+
+
+
+//通知游戏服开始一局游戏
+message M2S_StartGame // IRequest
+{
+	int32 RpcId = 90;
+	repeated MatchPlayerInfo MatchPlayerInfos = 1;//玩家信息
+	int32 RoomType = 2; //房间类型 1.是匹配 2.是自定义房卡
+	MatchRoomConfig RoomConfig = 4; //房间配置信息
+	int32 NeedJeweNumCount = 5;//需要钻石的数量
+	int32 RoomId = 6; //房间的ID
+	int32 FriendsCircleId=7;//亲友圈id
+}
+
+//游戏通知匹配服 开始游戏了 传一个房间ID
+message S2M_StartGame // IRequest
+{
+	int32 RpcId = 90;
+	int32  RoomId = 1;//房间的ID
+	int64  RoomActorId = 2;//房间对象的ID
+}
+
+//请求亲友圈所有的房间列表
+message C2M_GetFriendsCircleRoomList // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+	int32 FriendsCircleId = 1;//亲友圈id
+}
+
+message M2C_GetFriendsCircleRoomList // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	repeated RoomInfo RoomInfos=1;//亲友圈所有对应的房间信息
+}
+
+//发送给客户端 告诉客户端该用户正在游戏中
+message Actor_BeingInGame // IActorMessage
+{
+   int32  RpcId = 90;
+   int64 ActorId = 94;
+   bool IsGameBeing=1;
+}
+
+//请求断线重连的数据
+message C2M_GetReconnectionRoomInfo // IUserRequest
+{
+	int32 RpcId = 90;
+	int64 UserId = 91;
+}
+
+message M2C_GetReconnectionRoomInfo // IResponse
+{
+	int32  RpcId = 90;
+	int32  Error = 91;
+	string Message = 92;
+	bool IsGameBeing=1;//是否在游戏中
+	RoomInfo RoomInfos=2;//房间信息 如果在游戏中 而数据为空 就是需要游戏发来的游戏数据
+}
+
+//发送给游戏服告诉他 玩家请求重连
+message Actor_UserRequestReconnectionRoom // IActorMessage
+{
+    int32 RpcId = 90;
+	int64 ActorId = 94;
+	int64 UserId=1;//玩家的id
+	int64 UserActorId=2;//发消息给客户端需要的id 就是网关的SessionId
+}
+
