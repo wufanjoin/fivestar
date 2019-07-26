@@ -10,7 +10,7 @@
    下载项目直接打开Unity工程,进入Init场景 直接点击运行就可以运行, 服务器租用的是阿里云 预计8月20日到期  
    云服务器到期后,连不上服务器,需要自己开启本地服务器  
    注：ETModel.Init.isNetworkBundle 这个字段控制是否 使用本地资源 还是使用网络资源  
-   APK和EXE 已经上传可以安装运行  
+   [打好包apk下载](https://gamegather.oss-cn-beijing.aliyuncs.com/kwx.apk)  
    安卓和IOS工程暂时没有上传,因为涉及到开放平台,见谅!  
    
 # 工作  
